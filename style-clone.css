@@ -46,11 +46,13 @@ h2 {
 .master-img {
   width: 266px;
   height: 320px;
+  margin-bottom: 36px;
 }
 
 .master-img-black {
   width: 350px;
   height: 320px;
+  margin-bottom: 36px;
 }
 
 .grid-2-col {
