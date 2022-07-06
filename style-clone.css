@@ -75,3 +75,15 @@ h2 {
 .colors {
   margin-bottom: 48px;
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 24px;
+}
+
+li:nth-last-child(1) {
+  margin-bottom: none;
+}
