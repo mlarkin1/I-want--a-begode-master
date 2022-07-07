@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
 }
 
 p {
@@ -27,7 +30,10 @@ img {
 }
 
 h1 {
+  font-size: 44px;
   margin-bottom: 24px;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .header-text-box {
@@ -36,10 +42,14 @@ h1 {
 
 .header-text {
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 h2 {
   margin-top: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
 }
 
 .grid-3-cols {
@@ -75,12 +85,24 @@ h2 {
   gap: 24px;
 }
 
+.testimonial-blockquote h2 {
+  font-size: 24px;
+}
+
 blockquote {
   font-style: oblique;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .features-heading {
   margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.features-description {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .colors {
@@ -94,6 +116,7 @@ blockquote {
 
 .wheel-color-title {
   margin-bottom: 24px;
+  font-size: 20px;
 }
 
 .color-details {
@@ -109,4 +132,5 @@ blockquote {
 .wheel-price {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
