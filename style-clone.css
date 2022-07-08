@@ -1,3 +1,6 @@
+/* Main color #5c940d */
+/* Grey color #343a40 */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,9 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #5c940d;
+  border-top: 8px solid #5c940d;
 }
 
 p {
@@ -18,20 +24,26 @@ p {
   width: 960px;
   margin: 0 auto;
 }
+
+header,
+section {
+  margin-bottom: 96px;
+}
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 48px;
+  margin-top: 80px;
 }
 
 img {
   width: 100%;
+  border-radius: 12px;
 }
 
 h1 {
   font-size: 44px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   line-height: 1.1;
   letter-spacing: -1px;
 }
@@ -46,6 +58,38 @@ h1 {
   line-height: 1.7;
 }
 
+.btn:link,
+.btn:visited {
+  background-color: #5c940d;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #66a80f;
+}
+
+.btn--big {
+  border-radius: 30px;
+  padding: 16px 32px;
+  font-size: 18px;
+  box-shadow: 0px 3px 20px 2px rgba(102, 168, 15, 0.696);
+}
+
+.btn--small {
+  margin-right: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 30px;
+  box-shadow: 0px 3px 20px 2px rgba(102, 168, 15, 0.696);
+}
+
 h2 {
   margin-top: 48px;
   font-size: 36px;
@@ -57,7 +101,14 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 24px;
   margin-bottom: 96px;
-  gap: 48px;
+  gap: 96px;
+}
+
+.feature-icon {
+  stroke: #5c940d;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
 }
 
 .master-img {
@@ -83,16 +134,34 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  padding: 16px;
 }
 
 .testimonial-blockquote h2 {
   font-size: 24px;
+  margin-top: 0;
+}
+
+.testimonial-blockquote p {
+  color: #a9e34b;
+}
+
+.testimonial-section {
+  background-color: #5c940d;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.monster-img {
+  padding-top: 40px;
+  padding-left: 32px;
 }
 
 blockquote {
   font-style: oblique;
   font-size: 18px;
   line-height: 1.7;
+  color: #e9fac8;
 }
 
 .features-heading {
@@ -109,28 +178,44 @@ blockquote {
   margin-bottom: 48px;
 }
 
-.wheel-color {
-  padding: 24px;
-  text-align: center;
+.wheel-colors-prices {
+  border-radius: 12px;
+  box-shadow: 0px 5px 39px 20px rgba(52, 58, 64, 0.078);
+}
+
+.wheel-icon {
+  stroke: #5c940d;
+  width: 24px;
+  height: 24px;
 }
 
 .wheel-color-title {
   margin-bottom: 24px;
   font-size: 20px;
+  padding-left: 48px;
 }
 
 .color-details {
   list-style: none;
-  /* margin-bottom: 36px; */
+  padding-left: 48px;
+  margin-bottom: 48px;
 }
 
 .color-details li {
-  text-align: left;
-  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+  /* text-align: left; */
+  margin-bottom: 8px;
 }
 
 .wheel-price {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 20px;
+  padding-left: 48px;
+}
+
+.wheel-price h4 {
+  padding-bottom: 12px;
 }
