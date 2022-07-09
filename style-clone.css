@@ -36,9 +36,10 @@ header {
   margin-top: 80px;
 }
 
-img {
+.header-img {
   width: 100%;
   border-radius: 12px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.7);
 }
 
 h1 {
@@ -124,17 +125,16 @@ h2 {
 
 .grid-2-col {
   display: grid;
-  grid-template-columns: 266px 1fr;
+  grid-template-columns: 500px 1fr;
   margin-top: 48px;
   margin-bottom: 96px;
-  gap: 96px;
 }
 
 .testimonial-blockquote {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 16px;
+  justify-content: center;
+  gap: 8px;
 }
 
 .testimonial-blockquote h2 {
@@ -153,8 +153,9 @@ h2 {
 }
 
 .monster-img {
-  padding-top: 40px;
-  padding-left: 32px;
+  width: 500px;
+  padding: 40px;
+  border-radius: 50px;
 }
 
 blockquote {
